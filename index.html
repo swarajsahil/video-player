@@ -7,17 +7,28 @@
     <title>Video player</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="box"></div>
+<body> 
+        <div class="box"></div>
     <div class="control">
-            <input type="range" class="progressBar">
-        <div class="button">
-            <span><i class="fa-sharp fa-solid fa-backward-step prevBtn"></i></span>
-            <span><i class="fa-solid fa-circle-play playBtn"></i></span>
-            <span><i class="fa-sharp fa-solid fa-forward-step nextBtn"></i></span>
-        </div>
+            <div class="timer">
+                <span><i class="fa-solid fa-expand expand"></i></span>
+                <span class="curr-time">00:00</span>
+                <input type="range" class="progressBar" value="0">
+                <span class="dura-time">00:00</span>
+            </div>
+            <div class="logic-button">
+                <span class="increa"><i class="fa-solid fa-backward back"></i></span>
+                <span><i class="fa-sharp fa-solid fa-backward-step prevBtn"></i></span>
+                <span><i class="fa-solid fa-circle-play playBtn"></i></span>
+                <span><i class="fa-sharp fa-solid fa-forward-step nextBtn"></i></span>
+                <span class="decrea"><i class="fa-solid fa-forward forw"></i></span>
+            </div>
+            <div class="volumeContainer">
+                <img src="https://w7.pngwing.com/pngs/662/751/png-transparent-volume-icon-volume-computer-icons-sound-icon-volume-miscellaneous-text-hand-thumbnail.png" class="volumeIcon">
+                <input type="range" class="volumeBar">
+            </div>
 </div>
-    <script src="https://kit.fontawesome.com/d97b8b20c2.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/d97b8b20c2.js" crossorigin="anonymous"></script>
 </body>
 </html>
